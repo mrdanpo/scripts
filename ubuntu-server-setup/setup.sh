@@ -45,7 +45,7 @@ apt-get update -y && apt-get upgrade -y && apt-get autoremove -y
 systemctl enable docker
 systemctl enable ssh
 
-# TODO unattended upgrades
+# unattended upgrades
 cp -rf ./etc/apt/apt.conf.d/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
 
 reboot now
